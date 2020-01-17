@@ -97,7 +97,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="../Planes/Index.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Planes</p>
                                     </a>
@@ -167,8 +167,8 @@
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Estado</th>
                                                 <th>Código</th>
+                                                <th>Estado</th>
                                                 <th>Renglón</th>
                                                 <th>Descripción</th>
                                                 <th>Acciones</th>
@@ -176,8 +176,8 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Activo</td>
                                                 <td>001</td>
+                                                <td>Activo</td>
                                                 <td>Encabezado</td>
                                                 <td>Número del cliente</td>
                                                 <td><button type="button" class="btn btn-primary" data-toggle="modal"
@@ -187,8 +187,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Activo</td>
                                                 <td>002</td>
+                                                <td>Activo</td>
                                                 <td>Encabezado</td>
                                                 <td>Nombre del cliente</td>
                                                 <td><button type="button" class="btn btn-primary" data-toggle="modal"
@@ -198,8 +198,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Activo</td>
                                                 <td>003</td>
+                                                <td>Activo</td>
                                                 <td>Cuerpo</td>
                                                 <td>Servicios y consumos reflejados correctamente</td>
                                                 <td><button type="button" class="btn btn-primary" data-toggle="modal"
@@ -209,8 +209,8 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Activo</td>
                                                 <td>004</td>
+                                                <td>Activo</td>
                                                 <td>Cuerpo</td>
                                                 <td>Tipo de letra</td>
                                                 <td><button type="button" class="btn btn-primary" data-toggle="modal"
@@ -386,7 +386,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="submit" class="btn btn-primary" id="submit-editar-form">Guardar</button>
                 </div>
             </div>
         </div>
@@ -526,8 +526,12 @@
                 }
             });
 
-            $('#submit-agregar-form, #submit-editar-form').click(function () {
+            $('#submit-agregar-form').click(function () {
                 console.log($('#agregar-form'));
+            });
+
+            $('#submit-editar-form').click(function () {
+                console.log($('#editar-form'));
             });
         })
     </script>
