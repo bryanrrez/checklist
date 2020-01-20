@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Servicios | Checklist</title>
+    <title>Planes | Checklist</title>
 
     <link rel="shortcut icon" href="../../Content/dist/img/favicon.ico">
 
@@ -128,7 +128,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="../Plantillas/Index.html" class="nav-link">
                                         <i class="fas fa-cog nav-icon"></i>
                                         <p>Plantillas</p>
                                     </a>
@@ -225,8 +225,19 @@
                                 </div>
                                 <!-- ./card-body -->
                                 <div class="card-footer">
-                                    <div class="form-group">
-                                        <a href="./Agregar.html" class="btn btn-primary">Agregar plan</a>
+                                    <div class="btn-group dropright">
+                                        <a href="./Agregar.html" class="btn btn-primary" type="button">
+                                            Agregar plan
+                                        </a>
+                                        <button type="button"
+                                            class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" type="button" href="../Planes/Agregar.html">Con plantilla inalámbrica</a>
+                                            <a class="dropdown-item" type="button" href="../Planes/Agregar.html">Con plantilla alámbrica</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- ./card-footer -->
