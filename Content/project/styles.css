@@ -1,0 +1,20 @@
+.btn-bg {
+    /* margin-left: .6125rem; */
+    font-size: 100%;
+    margin-bottom: .1125rem;
+}
+
+.btn-bg:hover {
+    background-color: #fff;
+}
+
+.bagde-size {
+    font-size: 90%;
+}
+
+.btn-disabled:disabled {
+    opacity: .65;
+    color: #6c757d;
+    background-color: #fff;
+    border-color: #fff;
+}
