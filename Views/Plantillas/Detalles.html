@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Plantillas | Checklist</title>
+
+    <link rel="shortcut icon" href="../../Content/dist/img/favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../Content/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../Content/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="../../Content/plugins/daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="../../Content/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="../../Content/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="../../Content/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../../Content/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="../../Content/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="../../Content/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../Content/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <!-- Estilos personalizados para el proyecto -->
+    <link rel="stylesheet" href="../../Content/project/styles.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">DONALD TRUMP 13-1313</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index3.html" class="brand-link">
+                <img src="../../Content/dist/img/logo-claro.png" alt="Claro Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Checklist</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Formularios/Agregar.html" class="nav-link">
+                                <i class="nav-icon fas fa-plus-square"></i>
+                                <p>
+                                    Agregar formulario
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview menu-close">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-list"></i>
+                                <p>
+                                    Listados
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../Formularios/Index.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Formularios</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../Planes/Index.html" class="nav-link active">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Planes</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../Servicios/Index.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Servicios</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../Registros/Index.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Registros</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview menu-close">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-cogs"></i>
+                                <p>
+                                    Configuraciones
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../Plantillas/Index.html" class="nav-link">
+                                        <i class="fas fa-cog nav-icon"></i>
+                                        <p>Plantillas</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../Renglones/Index.html" class="nav-link">
+                                        <i class="fas fa-cog nav-icon"></i>
+                                        <p>Renglones</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../Controles/Index.html" class="nav-link">
+                                        <i class="fas fa-cog nav-icon"></i>
+                                        <p>Controles</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-question-circle"></i>
+                                <p>
+                                    Acerca
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-12">
+                            <h1 class="m-0 text-dark">Detalles de la plantilla</h1>
+                        </div><!-- /.col -->
+                        <!--/.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <!-- form start -->
+                                <div role=form>
+                                    <div class="card-body">
+                                        <div class="form-row">
+                                            <!-- <div class="col-lg-2 col-md-3 col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="soc">SOC</label>
+                                                    <input type="text" class="form-control" id="soc" disabled>
+                                                </div>
+                                            </div> -->
+
+                                            <div class="col-lg-7 col-md-5 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="descripcion">Descripción</label>
+                                                    <input type="text" class="form-control" id="descripcion" value="Inalámbrica" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="col-lg-3 col-md-4 col-sm-5">
+                                                <div class="form-group">
+                                                    <label for="renta">Renta</label>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">RD$</span>
+                                                        </div>
+                                                        <input type="text" class="form-control" disabled>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <!-- ./form-row -->
+                                        <div class="form-row">
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="accordion" id="socs-accordion">
+                                                    <div class="card card-light">
+                                                        <div class="card-header" id="socs-heading">
+                                                            <h2>
+                                                                <div class="btn-group">
+                                                                    <button class="btn btn-outline-primary"
+                                                                        type="button" data-toggle="collapse"
+                                                                        data-target="#socs-collapse"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="socs-collapse">
+                                                                        SOCs
+                                                                    </button>
+                                                                </div>
+                                                                <button type="button" class="btn btn-outline-primary"
+                                                                    data-toggle="modal" data-target="#agregarSOCModal" disabled>
+                                                                    <i class="fas fa-plus"></i>
+                                                                </button>
+                                                            </h2>
+                                                        </div>
+                                                        <div id="socs-collapse" class="collapse show"
+                                                            aria-labelledby="socs-heading"
+                                                            data-parent="#socs-accordion">
+                                                            <div class="card-body">
+                                                                <div class="form-row">
+                                                                    <div class="col-1">
+                                                                        <div class="btn-group dropup">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary close btn-bg btn-disabled"
+                                                                                role="button" data-toggle="dropdown"
+                                                                                aria-haspopup="true" aria-expanded="false" disabled>
+                                                                                <i class="fas fa-ellipsis-v"></i>
+                                                                            </button>
+                                                                            <div class="dropdown-menu dropdown-menu-left">
+                                                                                <button
+                                                                                    class="dropdown-item">Editar</button>
+                                                                                <button
+                                                                                    class="dropdown-item">Remover</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox"
+                                                                                id="soc1" checked disabled>
+                                                                            <label class="form-check-label" for="soc1">
+                                                                                Internet Móvil 7GB
+                                                                                <span class="badge badge-success bagde-size"
+                                                                                    id="soc1-price">RD$200.00</span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- ./form-row -->
+                                                                <div class="form-row">
+                                                                    <div class="col-1">
+                                                                        <div class="btn-group dropup">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary close btn-bg btn-disabled"
+                                                                                role="button" data-toggle="dropdown"
+                                                                                aria-haspopup="true" aria-expanded="false" disabled>
+                                                                                <i class="fas fa-ellipsis-v"></i>
+                                                                            </button>
+                                                                            <div class="dropdown-menu dropdown-menu-left">
+                                                                                <button
+                                                                                    class="dropdown-item">Editar</button>
+                                                                                <button
+                                                                                    class="dropdown-item">Remover</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox"
+                                                                                id="soc2" checked disabled>
+                                                                            <label class="form-check-label" for="soc2">
+                                                                                Internet Móvil 10GB
+                                                                                <span class="badge badge-success bagde-size"
+                                                                                    id="soc2-price">RD$200.00</span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- ./form-row -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="accordion" id="features-accordion">
+                                                    <div class="card card-light">
+                                                        <div class="card-header" id="features-heading">
+                                                            <h2>
+                                                                <button class="btn btn-outline-primary" type="button"
+                                                                    data-toggle="collapse"
+                                                                    data-target="#features-collapse"
+                                                                    aria-expanded="true"
+                                                                    aria-controls="features-collapse">
+                                                                    Features
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-primary"
+                                                                    data-toggle="modal" data-target="#agregarFeatureModal" disabled>
+                                                                    <i class="fas fa-plus"></i>
+                                                                </button>
+                                                            </h2>
+                                                        </div>
+                                                        <div id="features-collapse" class="collapse show"
+                                                            aria-labelledby="features-heading"
+                                                            data-parent="#features-accordion">
+                                                            <div class="card-body">
+                                                                <div class="form-row">
+                                                                    <div class="col-1">
+                                                                        <div class="btn-group dropup">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary close btn-bg btn-disabled"
+                                                                                role="button" data-toggle="dropdown"
+                                                                                aria-haspopup="true" aria-expanded="false" disabled>
+                                                                                <i class="fas fa-ellipsis-v"></i>
+                                                                            </button>
+                                                                            <div class="dropdown-menu dropdown-menu-left">
+                                                                                <button
+                                                                                    class="dropdown-item">Editar</button>
+                                                                                <button
+                                                                                    class="dropdown-item">Remover</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox"
+                                                                                id="feature1" checked disabled>
+                                                                            <label class="form-check-label"
+                                                                                for="feature1">Minutos
+                                                                                Ilimitados dentro de la
+                                                                                Red Móvil Claro todos los Días de la
+                                                                                Semana
+                                                                                <span class="badge badge-success"
+                                                                                    style="font-size: 90%;"
+                                                                                    id="soc1-price">RD$0.00</span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- ./form-row -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ./form-row -->
+                                        <!-- Comentario -->
+                                        <div class="form-row mt-2">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label for="comentario">Comentario</label>
+                                                    <textarea class="form-control" id="comentario" rows="3" disabled>Mi mega comentario.</textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ./form-row -->
+                                    </div>
+                                    <!-- ./card-body -->
+                                    <div class="card-footer">
+                                        <div class="form-group">
+                                            <a href="./Editar.html" class="btn btn-primary">Editar</a>
+                                            <a href="./Index.html" class="btn btn-default">Cancelar</a>
+                                        </div>
+                                    </div>
+                                    <!-- ./card-footer -->
+                                </div>
+                                <!-- form end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Agregar SOC modal start -->
+    <div class="modal fade" id="agregarSOCModal" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="agregarSOCModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="agregarSOCModalLabel">Agregar SOC</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="agregar-soc-form">
+                        <div class="form-group">
+                            <label for="agregar-soc" class="col-form-label">SOC</label>
+                            <input type="text" class="form-control" id="agregar-soc">
+                        </div>
+                        <div class="form-group">
+                            <label for="agregar-soc-descripcion" class="col-form-label">Descripción</label>
+                            <input type="text" class="form-control" id="agregar-soc-descripcion">
+                        </div>
+                        <div class="form-group">
+                            <label for="agregar-soc-renta" class="col-form-label">Renta</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">RD$</span>
+                                </div>
+                                <input type="text" class="form-control" id="agregar-soc-renta">
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="agregar-incluir-soc-en-leyenda">
+                            <label class="form-check-label" for="agregar-incluir-soc-en-leyenda">
+                                Incluir en leyenda
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="submit-agregar-soc-form">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Agregar SOC modal end -->
+
+    <!-- Agregar Feature modal start -->
+    <div class="modal fade" id="agregarFeatureModal" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="agregarFeatureModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="agregarFeatureModalLabel">Agregar feature</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="agregar-feature-form">
+                        <div class="form-group">
+                            <label for="agregar-feature-code" class="col-form-label">Feature code</label>
+                            <input type="text" class="form-control" id="agregar-feature-code">
+                        </div>
+                        <div class="form-group">
+                            <label for="agregar-feature-descripcion" class="col-form-label">Descripción</label>
+                            <input type="text" class="form-control" id="agregar-feature-descripcion">
+                        </div>
+                        <div class="form-group">
+                            <label for="agregar-feature-renta" class="col-form-label">Renta</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">RD$</span>
+                                </div>
+                                <input type="text" class="form-control" id="agregar-feature-renta">
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="agregar-incluir-feature-en-leyenda">
+                            <label class="form-check-label" for="agregar-incluir-feature-en-leyenda">
+                                Incluir en leyenda
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="submit-agregar-feature-form">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Agregar Feature modal end -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+        <div class="p-3">
+            <h5>Title</h5>
+            <p>Sidebar content</p>
+        </div>
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <!-- To the right -->
+        <div class="float-right d-none d-sm-inline">
+            <strong>Version</strong> 3.16.0
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2020 <a href="https://claro.com.do" target="_blank"
+                style="color: #DA291C;">Claro</a>.</strong> Todos los derechos reservados.
+    </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="../../Content/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables -->
+    <script src="../../Content/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="../../Content/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <!-- Select2 -->
+    <script src="../../Content/plugins/select2/js/select2.full.min.js"></script>
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="../../Content/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script src="../../Content/plugins/moment/moment.min.js"></script>
+    <script src="../../Content/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="../../Content/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="../../Content/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../../Content/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="../../Content/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../Content/dist/js/adminlte.min.js"></script>
+    <!-- Page script -->
+    <script>
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+                theme: 'bootstrap4'
+            })
+
+            //Datemask dd/mm/yyyy
+            $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+            //Datemask2 mm/dd/yyyy
+            $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+            //Money Euro
+            $('[data-mask]').inputmask()
+
+            //Date range picker
+            $('#reservation').daterangepicker()
+            //Date range picker with time picker
+            $('#reservationtime').daterangepicker({
+                timePicker: true,
+                timePickerIncrement: 30,
+                locale: {
+                    format: 'MM/DD/YYYY hh:mm A'
+                }
+            })
+            //Date range as a button
+            $('#daterange-btn').daterangepicker(
+                {
+                    ranges: {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month': [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    },
+                    startDate: moment().subtract(29, 'days'),
+                    endDate: moment()
+                },
+                function (start, end) {
+                    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+                }
+            )
+
+            //Timepicker
+            $('#timepicker').datetimepicker({
+                format: 'LT'
+            })
+
+            //Bootstrap Duallistbox
+            $('.duallistbox').bootstrapDualListbox()
+
+            //Colorpicker
+            $('.my-colorpicker1').colorpicker()
+            //color picker with addon
+            $('.my-colorpicker2').colorpicker()
+
+            $('.my-colorpicker2').on('colorpickerChange', function (event) {
+                $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
+            });
+
+            $("input[data-bootstrap-switch]").each(function () {
+                $(this).bootstrapSwitch('state', $(this).prop('checked'));
+            });
+
+            $('#agregarSOCModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget); // Button that triggered the modal
+                // var accion = button.data('accion') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this);
+
+                var socInput = modal.find('#agregar-soc');
+                var socDescripcionInput = modal.find('#agregar-soc-descripcion');
+                var socRentaInput = modal.find('#agregar-soc-renta');
+                var incluirSOCEnLeyendaInput = modal.find('#agregar-incluir-soc-en-leyenda');
+            });
+
+            $('#submit-agregar-soc-form').click(function () {
+                console.log($('#agregar-soc').val());
+                console.log($('#agregar-soc-descripcion').val());
+                console.log($('#agregar-soc-renta').val());
+                console.log($('#agregar-incluir-soc-en-leyenda').val());
+            });
+
+            $('#agregarFeatureModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget); // Button that triggered the modal
+                // var accion = button.data('accion') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this);
+
+                var featureCodeInput = modal.find('#agregar-feature-code');
+                var featureDescripcionInput = modal.find('#agregar-feature-descripcion');
+                var featureRentaInput = modal.find('#agregar-feature-renta');
+                var incluirFeatureEnLeyendaInput = modal.find('#agregar-incluir-feature-en-leyenda');
+            });
+            
+            $('#submit-agregar-feature-form').click(function () {
+                console.log($('#agregar-feature-code').val());
+                console.log($('#agregar-feature-descripcion').val());
+                console.log($('#agregar-feature-renta').val());
+                console.log($('#agregar-incluir-feature-en-leyenda').val());
+            });
+        })
+    </script>
+</body>
+
+</html>
