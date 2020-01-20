@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Servicios | Checklist</title>
+    <title>Planes | Checklist</title>
 
     <link rel="shortcut icon" href="../../Content/dist/img/favicon.ico">
 
@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="../../Content/dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <!-- Estilos personalizados para el proyecto -->
+    <link rel="stylesheet" href="../../Content/project/styles.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -128,7 +131,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="../Plantillas/Index.html" class="nav-link">
                                         <i class="fas fa-cog nav-icon"></i>
                                         <p>Plantillas</p>
                                     </a>
@@ -184,7 +187,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <!-- form start -->
-                                <form role=form>
+                                <div role=form>
                                     <div class="card-body">
                                         <div class="form-row">
                                             <div class="col-lg-2 col-md-3 col-sm-4">
@@ -215,48 +218,105 @@
                                         </div>
                                         <!-- ./form-row -->
                                         <div class="form-row">
-                                            <div class="col-6">
+                                            <div class="col-lg-6 col-md-12">
                                                 <div class="accordion" id="socs-accordion">
                                                     <div class="card card-light">
                                                         <div class="card-header" id="socs-heading">
                                                             <h2>
-                                                                <button class="btn btn-outline-primary" type="button"
-                                                                    data-toggle="collapse" data-target="#socs-collapse"
-                                                                    aria-expanded="true" aria-controls="socs-collapse">
-                                                                    SOCs
-                                                                </button>
                                                                 <div class="btn-group">
-                                                                    <button type="button" class="btn btn-outline-primary"
-                                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                                        aria-expanded="false" style="border-top-right-radius: 0.25rem; border-bottom-right-radius: 0.25rem;">
-                                                                        <i class="fas fa-plus"></i>
+                                                                    <button class="btn btn-outline-primary"
+                                                                        type="button" data-toggle="collapse"
+                                                                        data-target="#socs-collapse"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="socs-collapse">
+                                                                        SOCs
                                                                     </button>
-                                                                    <div class="dropdown-menu dropdown-menu-left">
-                                                                        <a class="dropdown-item" type="button"
-                                                                            href="./Editar.html">Agregar SOC</a>
-                                                                        <a class="dropdown-item" type="button"
-                                                                            href="./Agregar.html">Buscar</a>
-                                                                    </div>
                                                                 </div>
+                                                                <button type="button" class="btn btn-outline-primary"
+                                                                    data-toggle="modal" data-target="#agregarSOCModal">
+                                                                    <i class="fas fa-plus"></i>
+                                                                </button>
                                                             </h2>
                                                         </div>
                                                         <div id="socs-collapse" class="collapse show"
                                                             aria-labelledby="socs-heading"
                                                             data-parent="#socs-accordion">
                                                             <div class="card-body">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        id="soc1">
-                                                                    <label class="form-check-label" for="soc1">Internet
-                                                                        Móvil 7GB</label>
+                                                                <div class="form-row" id="XZINMOP">
+                                                                    <div class="col-1">
+                                                                        <div class="btn-group dropup">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary close btn-bg"
+                                                                                role="button" data-toggle="dropdown"
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false">
+                                                                                <i class="fas fa-ellipsis-v"></i>
+                                                                            </button>
+                                                                            <div
+                                                                                class="dropdown-menu dropdown-menu-left">
+                                                                                <button class="dropdown-item"
+                                                                                    data-toggle="modal"
+                                                                                    data-target="#editarSOCModal">Editar</button>
+                                                                                <button
+                                                                                    class="dropdown-item">Remover</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input"
+                                                                                type="checkbox" id="soc1">
+                                                                            <label class="form-check-label" for="soc1">
+                                                                                Internet Móvil 7GB
+                                                                                <span
+                                                                                    class="badge badge-success bagde-size"
+                                                                                    id="soc1-price">RD$200.00</span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- ./form-row -->
+                                                                <div class="form-row" id="XZINMOC">
+                                                                    <div class="col-1">
+                                                                        <div class="btn-group dropup">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary close btn-bg"
+                                                                                role="button" data-toggle="dropdown"
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false">
+                                                                                <i class="fas fa-ellipsis-v"></i>
+                                                                            </button>
+                                                                            <div
+                                                                                class="dropdown-menu dropdown-menu-left">
+                                                                                <button class="dropdown-item"
+                                                                                    data-toggle="modal"
+                                                                                    data-target="#editarSOCModal">Editar</button>
+                                                                                <button
+                                                                                    class="dropdown-item">Remover</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input"
+                                                                                type="checkbox" id="soc2">
+                                                                            <label class="form-check-label" for="soc2">
+                                                                                Internet Móvil 10GB
+                                                                                <span
+                                                                                    class="badge badge-success bagde-size"
+                                                                                    id="soc2-price">RD$200.00</span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- ./form-row -->
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="col-6">
+                                            <div class="col-lg-6 col-md-12">
                                                 <div class="accordion" id="features-accordion">
                                                     <div class="card card-light">
                                                         <div class="card-header" id="features-heading">
@@ -268,33 +328,53 @@
                                                                     aria-controls="features-collapse">
                                                                     Features
                                                                 </button>
-                                                                <div class="btn-group">
-                                                                    <button type="button" class="btn btn-outline-primary"
-                                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                                        aria-expanded="false" style="border-top-right-radius: 0.25rem; border-bottom-right-radius: 0.25rem;">
-                                                                        <i class="fas fa-ellipsis-h"></i>
-                                                                    </button>
-                                                                    <div class="dropdown-menu dropdown-menu-left">
-                                                                        <a class="dropdown-item" type="button"
-                                                                            href="./Editar.html">Editar</a>
-                                                                        <a class="dropdown-item" type="button"
-                                                                            href="./Agregar.html">Calcar</a>
-                                                                    </div>
-                                                                </div>
+                                                                <button type="button" class="btn btn-outline-primary"
+                                                                    data-toggle="modal"
+                                                                    data-target="#agregarFeatureModal">
+                                                                    <i class="fas fa-plus"></i>
+                                                                </button>
                                                             </h2>
                                                         </div>
                                                         <div id="features-collapse" class="collapse show"
                                                             aria-labelledby="features-heading"
                                                             data-parent="#features-accordion">
                                                             <div class="card-body">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        id="feature1">
-                                                                    <label class="form-check-label"
-                                                                        for="feature1">Minutos Ilimitados dentro de la
-                                                                        Red Móvil Claro todos los Días de la
-                                                                        Semana</label>
+                                                                <div class="form-row" id="MEN767">
+                                                                    <div class="col-1">
+                                                                        <div class="btn-group dropup">
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary close btn-bg"
+                                                                                role="button" data-toggle="dropdown"
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false">
+                                                                                <i class="fas fa-ellipsis-v"></i>
+                                                                            </button>
+                                                                            <div
+                                                                                class="dropdown-menu dropdown-menu-left">
+                                                                                <button
+                                                                                    class="dropdown-item">Editar</button>
+                                                                                <button
+                                                                                    class="dropdown-item">Remover</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input"
+                                                                                type="checkbox" id="feature1">
+                                                                            <label class="form-check-label"
+                                                                                for="feature1">Minutos
+                                                                                Ilimitados dentro de la
+                                                                                Red Móvil Claro todos los Días de la
+                                                                                Semana
+                                                                                <span class="badge badge-success"
+                                                                                    style="font-size: 90%;"
+                                                                                    id="soc1-price">RD$0.00</span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
+                                                                <!-- ./form-row -->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -313,17 +393,17 @@
                                         </div>
                                         <!-- ./form-row -->
                                     </div>
-                            </div>
-                            <!-- ./card-body -->
-                            <div class="card-footer">
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary">Agregar</button>
-                                    <a href="./Index.html" class="btn btn-default">Cancelar</a>
+                                    <!-- ./card-body -->
+                                    <div class="card-footer">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary">Agregar</button>
+                                            <a href="./Index.html" class="btn btn-default">Cancelar</a>
+                                        </div>
+                                    </div>
+                                    <!-- ./card-footer -->
                                 </div>
+                                <!-- form end -->
                             </div>
-                            <!-- ./card-footer -->
-                            </form>
-                            <!-- form end -->
                         </div>
                     </div>
                 </div>
@@ -333,6 +413,147 @@
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
+
+    <!-- Agregar SOC modal start -->
+    <div class="modal fade" id="agregarSOCModal" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="agregarSOCModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="agregarSOCModalLabel">Agregar SOC</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="agregar-soc-form">
+                        <div class="form-group">
+                            <label for="agregar-soc" class="col-form-label">SOC</label>
+                            <input type="text" class="form-control" id="agregar-soc">
+                        </div>
+                        <div class="form-group">
+                            <label for="agregar-soc-descripcion" class="col-form-label">Descripción</label>
+                            <input type="text" class="form-control" id="agregar-soc-descripcion">
+                        </div>
+                        <div class="form-group">
+                            <label for="agregar-soc-renta" class="col-form-label">Renta</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">RD$</span>
+                                </div>
+                                <input type="text" class="form-control" id="agregar-soc-renta">
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="agregar-incluir-soc-en-leyenda">
+                            <label class="form-check-label" for="agregar-incluir-soc-en-leyenda">
+                                Incluir en leyenda
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="submit-agregar-soc-form">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Agregar SOC modal end -->
+
+    <!-- Editar SOC modal start -->
+    <div class="modal fade" id="editarSOCModal" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="editarSOCModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editarSOCModalLabel">Editar SOC</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editar-soc-form">
+                        <div class="form-group">
+                            <label for="editar-soc" class="col-form-label">SOC</label>
+                            <input type="text" class="form-control" id="editar-soc">
+                        </div>
+                        <div class="form-group">
+                            <label for="editar-soc-descripcion" class="col-form-label">Descripción</label>
+                            <input type="text" class="form-control" id="editar-soc-descripcion">
+                        </div>
+                        <div class="form-group">
+                            <label for="editar-soc-renta" class="col-form-label">Renta</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">RD$</span>
+                                </div>
+                                <input type="text" class="form-control" id="editar-soc-renta">
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="editar-incluir-soc-en-leyenda">
+                            <label class="form-check-label" for="editar-incluir-soc-en-leyenda">
+                                Incluir en leyenda
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="submit-editar-soc-form">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Editar SOC modal end -->
+
+    <!-- Agregar Feature modal start -->
+    <div class="modal fade" id="agregarFeatureModal" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="agregarFeatureModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="agregarFeatureModalLabel">Agregar feature</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="agregar-feature-form">
+                        <div class="form-group">
+                            <label for="agregar-feature-code" class="col-form-label">Feature code</label>
+                            <input type="text" class="form-control" id="agregar-feature-code">
+                        </div>
+                        <div class="form-group">
+                            <label for="agregar-feature-descripcion" class="col-form-label">Descripción</label>
+                            <input type="text" class="form-control" id="agregar-feature-descripcion">
+                        </div>
+                        <div class="form-group">
+                            <label for="agregar-feature-renta" class="col-form-label">Renta</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">RD$</span>
+                                </div>
+                                <input type="text" class="form-control" id="agregar-feature-renta">
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="agregar-incluir-feature-en-leyenda">
+                            <label class="form-check-label" for="agregar-incluir-feature-en-leyenda">
+                                Incluir en leyenda
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="submit-agregar-feature-form">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Agregar Feature modal end -->
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
@@ -451,6 +672,72 @@
                 $(this).bootstrapSwitch('state', $(this).prop('checked'));
             });
 
+            $('#agregarSOCModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget); // Button that triggered the modal
+                // var accion = button.data('accion') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this);
+
+                var socInput = modal.find('#agregar-soc');
+                var socDescripcionInput = modal.find('#agregar-soc-descripcion');
+                var socRentaInput = modal.find('#agregar-soc-renta');
+                var incluirSOCEnLeyendaInput = modal.find('#agregar-incluir-soc-en-leyenda');
+            });
+
+            $('#editarSOCModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget); // Button that triggered the modal
+                // var accion = button.data('accion') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this);
+
+                var socInput = modal.find('#editar-soc');
+                var socDescripcionInput = modal.find('#editar-soc-descripcion');
+                var socRentaInput = modal.find('#editar-soc-renta');
+                var incluirSOCEnLeyendaInput = modal.find('#editar-incluir-soc-en-leyenda');
+            });
+
+            $('#submit-agregar-soc-form').click(function () {
+                var socInput = $('#agregar-soc');
+                var socDescripcionInput = $('#agregar-soc-descripcion');
+                var socRentaInput = $('#agregar-soc-renta');
+                var incluirSOCEnLeyendaInput = $('#agregar-incluir-soc-en-leyenda');
+
+                $('#socs-collapse div.card-body').append('<div class="form-row"><div class="col-1"><div class="btn-group dropup"><button type="button" class="btn btn-secondary close btn-bg"role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button><div class="dropdown-menu dropdown-menu-left"><button class="dropdown-item">Editar</button><button class="dropdown-item">Remover</button></div></div></div><div class="col"><div class="form-check"><input class="form-check-input" type="checkbox" id="soc1"><label class="form-check-label" for="soc1">' + socDescripcionInput.val() + ' <span class="badge badge-success bagde-size" id="soc1-price">RD$' + socRentaInput.val() + '</span></label></div></div></div>')
+
+                socInput.val('');
+                socDescripcionInput.val('');
+                socRentaInput.val('');
+                incluirSOCEnLeyendaInput.val('');
+            });
+
+            $('#agregarFeatureModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget); // Button that triggered the modal
+                // var accion = button.data('accion') // Extract info from data-* attributes
+                // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this);
+
+                var featureCodeInput = modal.find('#agregar-feature-code');
+                var featureDescripcionInput = modal.find('#agregar-feature-descripcion');
+                var featureRentaInput = modal.find('#agregar-feature-renta');
+                var incluirFeatureEnLeyendaInput = modal.find('#agregar-incluir-feature-en-leyenda');
+            });
+
+            $('#submit-agregar-feature-form').click(function () {
+                var featureCodeInput = $('#agregar-feature-code');
+                var featureDescripcionInput = $('#agregar-feature-descripcion');
+                var featureRentaInput = $('#agregar-feature-renta');
+                var incluirFeatureEnLeyendaInput = $('#agregar-incluir-feature-en-leyenda');
+
+                $('#features-collapse div.card-body').append('<div class="form-row"><div class="col-1"><div class="btn-group dropup"><button type="button" class="btn btn-secondary close btn-bg"role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button><div class="dropdown-menu dropdown-menu-left"><button class="dropdown-item">Editar</button><button class="dropdown-item">Remover</button></div></div></div><div class="col"><div class="form-check"><input class="form-check-input" type="checkbox" id="feature1"><label class="form-check-label" for="feature1">' + featureDescripcionInput.val() + ' <span class="badge badge-success bagde-size" id="feature1-price">RD$' + featureRentaInput.val() + '</span></label></div></div></div>')
+
+                featureCodeInput.val('');
+                featureDescripcionInput.val('');
+                featureRentaInput.val('');
+                incluirFeatureEnLeyendaInput.val('');
+            });
         })
     </script>
 </body>
