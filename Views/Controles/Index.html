@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Servicios | Checklist</title>
+    <title>Controles | Checklist</title>
 
     <link rel="shortcut icon" href="../../Content/dist/img/favicon.ico">
 
@@ -128,7 +128,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="../Plantillas/Index.html" class="nav-link">
                                         <i class="fas fa-cog nav-icon"></i>
                                         <p>Plantillas</p>
                                     </a>
@@ -243,9 +243,8 @@
                                 </div>
                                 <!-- ./card-body -->
                                 <div class="card-footer">
-                                    <div class="form-group">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#agregarModal" data-accion="agregar">Agregar control</button>
-                                    </div>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#agregarModal" data-accion="agregar">Agregar control</button>
                                 </div>
                                 <!-- ./card-footer -->
                             </div>
@@ -290,7 +289,7 @@
     <!-- Agregar modal start -->
     <div class="modal fade" id="agregarModal" data-backdrop="static" tabindex="-1" role="dialog"
         aria-labelledby="agregarModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="agregarModalLabel">Agregar control</h5>
@@ -332,10 +331,10 @@
     <!-- Detalles modal start -->
     <div class="modal fade" id="detallesModal" tabindex="-1" role="dialog" aria-labelledby="detallesModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="detallesModalLabel">Detalles del renglón - 001</h5>
+                    <h5 class="modal-title" id="detallesModalLabel">Detalles del control - 001</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -373,10 +372,10 @@
     <!-- Editar modal start -->
     <div class="modal fade" id="editarModal" data-backdrop="static" tabindex="-1" role="dialog"
         aria-labelledby="editarModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editarModalLabel">Editar el renglón - 001</h5>
+                    <h5 class="modal-title" id="editarModalLabel">Editar el control - 001</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -522,14 +521,14 @@
             $("input[data-bootstrap-switch]").each(function () {
                 $(this).bootstrapSwitch('state', $(this).prop('checked'));
             });
-            
+
             $('#editarModal, #detallesModal, #agregarModal').on('show.bs.modal', function (event) {
                 var button = $(event.relatedTarget); // Button that triggered the modal
                 var accion = button.data('accion') // Extract info from data-* attributes
                 // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
                 // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
                 var modal = $(this);
-                
+
                 var renglonSelect = modal.find('#renglon-' + accion);
                 var descripcionInput = modal.find('#descripcion-' + accion);
                 var activarInput = modal.find('#activar-' + accion);
