@@ -171,9 +171,39 @@
             <div class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
-                        <div class="col-sm-12">
+                        <div class="col-lg-11 col-md-11 col-sm-12" data-progress-bar="header">
                             <h1 class="m-0 text-dark">Detalles del plan</h1>
-                        </div><!-- /.col -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-1" data-progress-bar="diseno">
+                            <div class="progress" style="height: 30px; border-radius: .25rem;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 100%"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip"
+                                    data-placement="top" title="En diseño">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-1" data-progress-bar="configuracion" style="display: none;">
+                            <div class="progress" style="height: 30px; border-radius: .25rem;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 100%"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip"
+                                    data-placement="top" title="En configuración">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-1" data-progress-bar="completado" style="display: none;">
+                            <div class="progress" style="height: 30px; border-radius: .25rem;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip"
+                                    data-placement="top" title="Plan completado">
+                                    <i class="far fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
                         <!--/.col -->
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
@@ -193,14 +223,16 @@
                                             <div class="col-lg-2 col-md-3 col-sm-4">
                                                 <div class="form-group">
                                                     <label for="soc">SOC</label>
-                                                    <input type="text" class="form-control" id="soc" value="SPSL500" disabled>
+                                                    <input type="text" class="form-control" id="soc" value="SPSL500"
+                                                        disabled>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-7 col-md-5 col-sm-12">
                                                 <div class="form-group">
                                                     <label for="descripcion">Descripción</label>
-                                                    <input type="text" class="form-control" id="descripcion" value="Smart Postpago Empleados 100" disabled>
+                                                    <input type="text" class="form-control" id="descripcion"
+                                                        value="Smart Postpago Empleados 100" disabled>
                                                 </div>
                                             </div>
 
@@ -211,7 +243,8 @@
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">RD$</span>
                                                         </div>
-                                                        <input type="text" class="form-control" value="4,750.00" disabled>
+                                                        <input type="text" class="form-control" value="4,750.00"
+                                                            disabled>
                                                     </div>
                                                 </div>
                                             </div>
@@ -233,7 +266,8 @@
                                                                     </button>
                                                                 </div>
                                                                 <button type="button" class="btn btn-outline-primary"
-                                                                    data-toggle="modal" data-target="#agregarSOCModal" disabled>
+                                                                    data-toggle="modal" data-target="#agregarSOCModal"
+                                                                    disabled>
                                                                     <i class="fas fa-plus"></i>
                                                                 </button>
                                                             </h2>
@@ -248,10 +282,12 @@
                                                                             <button type="button"
                                                                                 class="btn btn-secondary close btn-bg btn-disabled"
                                                                                 role="button" data-toggle="dropdown"
-                                                                                aria-haspopup="true" aria-expanded="false" disabled>
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false" disabled>
                                                                                 <i class="fas fa-ellipsis-v"></i>
                                                                             </button>
-                                                                            <div class="dropdown-menu dropdown-menu-left">
+                                                                            <div
+                                                                                class="dropdown-menu dropdown-menu-left">
                                                                                 <button
                                                                                     class="dropdown-item">Editar</button>
                                                                                 <button
@@ -261,11 +297,13 @@
                                                                     </div>
                                                                     <div class="col">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="checkbox"
-                                                                                id="soc1" checked disabled>
+                                                                            <input class="form-check-input"
+                                                                                type="checkbox" id="soc1" checked
+                                                                                disabled>
                                                                             <label class="form-check-label" for="soc1">
                                                                                 Internet Móvil 7GB
-                                                                                <span class="badge badge-success bagde-size"
+                                                                                <span
+                                                                                    class="badge badge-success bagde-size"
                                                                                     id="soc1-price">RD$200.00</span>
                                                                             </label>
                                                                         </div>
@@ -278,10 +316,12 @@
                                                                             <button type="button"
                                                                                 class="btn btn-secondary close btn-bg btn-disabled"
                                                                                 role="button" data-toggle="dropdown"
-                                                                                aria-haspopup="true" aria-expanded="false" disabled>
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false" disabled>
                                                                                 <i class="fas fa-ellipsis-v"></i>
                                                                             </button>
-                                                                            <div class="dropdown-menu dropdown-menu-left">
+                                                                            <div
+                                                                                class="dropdown-menu dropdown-menu-left">
                                                                                 <button
                                                                                     class="dropdown-item">Editar</button>
                                                                                 <button
@@ -291,11 +331,13 @@
                                                                     </div>
                                                                     <div class="col">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="checkbox"
-                                                                                id="soc2" checked disabled>
+                                                                            <input class="form-check-input"
+                                                                                type="checkbox" id="soc2" checked
+                                                                                disabled>
                                                                             <label class="form-check-label" for="soc2">
                                                                                 Internet Móvil 10GB
-                                                                                <span class="badge badge-success bagde-size"
+                                                                                <span
+                                                                                    class="badge badge-success bagde-size"
                                                                                     id="soc2-price">RD$200.00</span>
                                                                             </label>
                                                                         </div>
@@ -321,7 +363,8 @@
                                                                     Features
                                                                 </button>
                                                                 <button type="button" class="btn btn-outline-primary"
-                                                                    data-toggle="modal" data-target="#agregarFeatureModal" disabled>
+                                                                    data-toggle="modal"
+                                                                    data-target="#agregarFeatureModal" disabled>
                                                                     <i class="fas fa-plus"></i>
                                                                 </button>
                                                             </h2>
@@ -336,10 +379,12 @@
                                                                             <button type="button"
                                                                                 class="btn btn-secondary close btn-bg btn-disabled"
                                                                                 role="button" data-toggle="dropdown"
-                                                                                aria-haspopup="true" aria-expanded="false" disabled>
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false" disabled>
                                                                                 <i class="fas fa-ellipsis-v"></i>
                                                                             </button>
-                                                                            <div class="dropdown-menu dropdown-menu-left">
+                                                                            <div
+                                                                                class="dropdown-menu dropdown-menu-left">
                                                                                 <button
                                                                                     class="dropdown-item">Editar</button>
                                                                                 <button
@@ -349,8 +394,9 @@
                                                                     </div>
                                                                     <div class="col">
                                                                         <div class="form-check">
-                                                                            <input class="form-check-input" type="checkbox"
-                                                                                id="feature1" checked disabled>
+                                                                            <input class="form-check-input"
+                                                                                type="checkbox" id="feature1" checked
+                                                                                disabled>
                                                                             <label class="form-check-label"
                                                                                 for="feature1">Minutos
                                                                                 Ilimitados dentro de la
@@ -376,7 +422,8 @@
                                             <div class="col">
                                                 <div class="form-group">
                                                     <label for="comentario">Comentario</label>
-                                                    <textarea class="form-control" id="comentario" rows="3" disabled>Mi mega comentario.</textarea>
+                                                    <textarea class="form-control" id="comentario" rows="3"
+                                                        disabled>Mi mega comentario.</textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -614,6 +661,38 @@
                 $(this).bootstrapSwitch('state', $(this).prop('checked'));
             });
 
+            $('[data-toggle="tooltip"]').tooltip();
+
+            $('[data-progress-bar="diseno"] > div.progress > div.progress-bar').click(function () {
+                $(this).removeClass('bg-warning');
+                $(this).attr('data-original-title', 'Diseño completado');
+
+                if ($('[data-progress-bar="configuracion"]').not(':visible')) {
+                    $('[data-progress-bar="header"]').removeClass('col-lg-11 col-md-11').addClass('col-lg-10 col-md-10')
+                    $('[data-progress-bar="configuracion"]').removeAttr('style');
+                }
+            });
+
+            $('[data-progress-bar="configuracion"] > div.progress > div.progress-bar').click(function () {
+                $('[data-progress-bar="diseno"]').attr('style', 'display: none;');
+                $('[data-progress-bar="configuracion"]').attr('style', 'display: none;');
+
+                if ($('[data-progress-bar="configuracion"]').not(':visible')) {
+                    $('[data-progress-bar="header"]').removeClass('col-lg-10 col-md-10').addClass('col-lg-11 col-md-11')
+                    $('[data-progress-bar="completado"]').removeAttr('style');
+                    $('a[href="./Editar.html"]').addClass('disabled');
+                }
+            });
+
+            $('[data-progress-bar="completado"] > div.progress > div.progress-bar').click(function () {
+                $('[data-progress-bar="diseno"]').removeAttr('style');
+                $('a[href="./Editar.html"]').removeClass('disabled');
+                $('[data-progress-bar="completado"]').attr('style', 'display: none;');
+
+                $('[data-progress-bar="diseno"] > div.progress > div.progress-bar').toggleClass('bg-warning');
+                $('[data-progress-bar="diseno"] > div.progress > div.progress-bar').attr('data-original-title', 'En diseño');
+            });
+
             $('#agregarSOCModal').on('show.bs.modal', function (event) {
                 var button = $(event.relatedTarget); // Button that triggered the modal
                 // var accion = button.data('accion') // Extract info from data-* attributes
@@ -646,7 +725,7 @@
                 var featureRentaInput = modal.find('#agregar-feature-renta');
                 var incluirFeatureEnLeyendaInput = modal.find('#agregar-incluir-feature-en-leyenda');
             });
-            
+
             $('#submit-agregar-feature-form').click(function () {
                 console.log($('#agregar-feature-code').val());
                 console.log($('#agregar-feature-descripcion').val());
